@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ look.number }} — Nostalgia Club</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+<body class="detail-body">
+  <header class="detail-header">
+    <a href="/" class="back">← volver</a>
+    <span>{{ look.number }}</span>
+  </header>
+
+  <main class="detail-page">
+    <section class="detail-image">
+      <img src="{{ url_for('static', filename=look.image) }}" alt="{{ look.number }}" />
+    </section>
+
+    <section class="detail-copy">
+      <p>{{ look.number }}</p>
+      <h1>{{ look.title }}</h1>
+      <span>{{ look.description }}</span>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nostalgia Club</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+<body>
+  <main class="canva-page">
+    <section class="page-section">
+      <img src="{{ url_for('static', filename='img/page_01.png') }}" alt="Nostalgia Club portada" />
+    </section>
+
+    <section class="page-section">
+      <img src="{{ url_for('static', filename='img/page_02.png') }}" alt="Club 001 invitación" />
+    </section>
+
+    <section class="page-section look-section">
+      <img src="{{ url_for('static', filename='img/page_03.png') }}" alt="Club 001 looks" />
+
+      <a class="hotspot look-one" href="{{ url_for('look_detail', slug='look-01') }}" aria-label="Abrir Look 01"></a>
+      <a class="hotspot look-two" href="{{ url_for('look_detail', slug='look-02') }}" aria-label="Abrir Look 02"></a>
+      <a class="hotspot look-three" href="{{ url_for('look_detail', slug='look-03') }}" aria-label="Abrir Look 03"></a>
+    </section>
+
+    <section class="page-section">
+      <img src="{{ url_for('static', filename='img/page_04.png') }}" alt="Nostalgia Club cierre" />
+    </section>
+  </main>
+</body>
+</html>
